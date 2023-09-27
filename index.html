@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Three.js Project</title>
+         <style>
+         body { margin: 0; }
+         canvas { display: block; }
+         </style>
+         <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" type="text/css" />
+         <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Overlay -->
+<div class="overlay">
+    <!-- Toggle Switch -->
+    <label class="switch" style="position: absolute; top: 0; right: 0;">
+      <input type="checkbox" class="cb">
+      <span class="toggle">
+        <span class="left">off</span>  
+        <span class="right">on</span>  
+      </span>
+    </label>
+  </div>
+  
+    <div class="flex items-center justify-center h-screen">
+  
+      <!-- card -->
+      <div class="card shadow-2xl">
+        <figure>
+          <img id="image-preview" src="https://via.placeholder.com/500" class="h-64 object-cover"/>
+        </figure>
+            </div>
+              <div class="hero-content text-center">
+                <div class="max-w-md">
+                  <h1 class="text-5xl font-bold">Interactive Chat Bot (Ganga Program)</h1>
+                  <p class="py-6">Our project focuses on creating an AI, ML, and chatbot-powered interactive Robot Mascot named "Chacha Chaudhary", the mascot of the Namami Gange Programme. This independent robot aims to connect with school children, the common man, and all stakeholders of the National Mission for Clean Ganga (NMCG) to create awareness and disseminate information. The robot, equipped with a touch panel, will guide visitors through each component of the Namami Gange flagship program in the River Basin War Room & Ganga Museum. Additionally, a digital avatar of Chacha Chaudhary will be available on the NMCG website, providing an interactive platform to impart information, awareness, and education about riverine ecology. The solution is designed to be user-friendly and citizen-centric, enhancing the river people's connection component of the Namami Gange.</p>
+                  <button class="btn btn-primary" onclick="my_modal_1.showModal()">Get Started</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <!-- Heading -->
+                        <h2 class="modal-title ">Please Ask Me Something </h2>
+                
+                        <!-- Input Field -->
+                        <input type="text" id="input-field" class="input input-primary input-bordered" placeholder="Enter your text here">
+                
+                        <!-- Submit Button -->
+                        <button id="submit-button" class="btn btn-primary rounded-full mt-4">Submit</button>
+                
+                        <!-- Output Box -->
+                        <div id="output" class="p-4 box border border-primary content-center text-center">Output will be displayed here</div>
+                
+                        <!-- Close Button -->
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+                
+                </div>
+            
+            </div>
+      </div>
+  
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+  
+</html>
