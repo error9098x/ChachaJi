@@ -47,7 +47,7 @@ document.getElementById('submit-button').addEventListener('click', function(even
           xhr2.responseType = 'blob'; // Setting the responseType to 'blob'
       
           xhr2.setRequestHeader('accept', 'audio/mpeg');
-          xhr2.setRequestHeader('xi-api-key', '76f0c191839333843b73f5aeec9e38cf');
+          xhr2.setRequestHeader('xi-api-key', '08a134b000ccc8017863efc0160ff934');
           xhr2.setRequestHeader('Content-Type', 'application/json');
       
           var data = JSON.stringify({
